@@ -1,54 +1,40 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+		<title>{% if page.title %} {{ page.title }} | {% endif %} Rhiana & Daniel Heath</title>
+      <style>
+          body > div {
+            width: 50%;
+            height: 100%;
+          }
 
-<html>
-	<head>
-		<title>{% if page.title %} {{ page.title }} | {% endif %} Heath Family links</title>
-        <link rel="stylesheet" href="{{site.baseurl}}/style.css" />
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
+          a, img {
+            width: 100%;
+            height: 100%;
+          }
+
+          #left {
+            float: left;
+          }
+          #right {
+            float: right;
+          }
+
+      </style>
 	</head>
 
 	<body>
-		<div id="header">
-			<h1>Heath Family Links</h1>
-			<h4></h4>
-			<hr />
+		<div id="left">
+      <a href="http://rhiana.heath.cc">
+  			<img src="http://rhiana.heath.cc/img/rhiana1.JPG" alt="Rhiana"></img>
+      </a>
 		</div>
 
-		<div id="sidebar">
-
-			<h3>Daniel Heath</h3>
-
-			<ul>
-				<li><a href="http://danielrheath.net/">Tech Blog</a></li>
-				<li><a href="https://plus.google.com/114859106574535166251">Google+</a></li>
-				<li><a href="https://twitter.com/DanielrHeath">Twitter</a></li>
-				<li><a href="https://danielh.tent.is/">Tent</a></li>
-			</ul>
-
-			<h3>Some things Daniel has made</h3>
-
-			<ul>
-				<li><a href="http://ships.daniel.heath.cc">A multiplayer action game</a></li>
-				<li><a href="http://wod.daniel.heath.cc">A character generator for world of darkness</a></li>
-				<li><a href="http://miniweb.daniel.heath.cc">Miniweb (a demo app for teaching sinatra)</a></li>
-			</ul>
-			<h3>Rhiana Heath</h3>
-
-			<ul>
-				<li><a href="http://rhiana.heath.cc">Teaching site</a></li>
-			</ul>
-		</div>
-
-		<div id="content">
-
-
-
-		</div>
-
-		<div id="footer">
-			<hr />
-			<p>&copy; 2013 Daniel Heath</p>
+		<div id="right">
+      <a href="http://daniel.heath.cc">
+        <img src="http://daniel.heath.cc/profile-pic.png" alt="Daniel"></img>
+      </a>
 		</div>
 
 	</body>
