@@ -2,41 +2,122 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Trykker' rel='stylesheet' type='text/css'>
 		<title>{% if page.title %} {{ page.title }} | {% endif %} Rhiana & Daniel Heath</title>
       <style>
+          html {
+             height: 100%
+          }
+
           body > div {
             width: 50%;
             height: 100%;
           }
 
+          body {
+            font-family: 'Trykker', serif;
+            background:  -webkit-linear-gradient(rgba(103,228,111,.5), rgba(255,255,255,0)), url('../diagonal_waves.png') no-repeat;
+            background:  -moz-linear-gradient(rgba(103,228,111,.5), rgba(255,255,255,0)), url('../diagonal_waves.png') no-repeat;
+            background:  -o-linear-gradient(rgba(103,228,111,.5), rgba(255,255,255,0)), url('../diagonal_waves.png') no-repeat;
+            background:  linear-gradient(rgba(103,228,111,.5), rgba(255,255,255,0)), url('../diagonal_waves.png') no-repeat;
+            background-size: cover;
+          }
+
           a, img {
-            width: 100%;
-            height: 100%;
+            width: 300px;
+          }
+
+          img {
+               border: #FFF solid 2px;
+               margin-left: 5px;
+          }
+
+          h1 {
+            text-align: center;
+            background-color: #006363;
+            color: #FFF;
+            padding: 10px;
+            border-radius: 3px;
+          }
+
+          h2 {
+            color: #00C90D;
+            margin-left: 7px;
+          }
+
+          .container{
+            width: 90%;
+            max-width: 1000px; 
+            margin: auto;
+            background-color: #009999;
+            height: 800px;
           }
 
           #left {
             float: left;
+            border-right: #5CCCCC solid 2px;
+     
           }
           #right {
-            float: right;
+            border: #009999 solid 2px
           }
+
+          .grid_1 { width: 50%; }
+          .grid_2 { width: 90%; }
+
+          /*Media query, first break point*/
+
+          @media screen and (max-width: 892px) {
+           
+            #left,
+            #right {
+              float: none;
+              border-right: none;
+            }
+               a, img {
+              width: 230px;
+            }
+
+            
+
+            h2 {
+              font-size: 1em;
+            }
+
+          }
+
+          /*Media query, second break point*/
+
+          @media screen and (max-width: 380px) {
+               a, img {
+              width: 200px;
+            }
+          }
+
 
       </style>
 	</head>
 
 	<body>
-		<div id="left">
-      <a href="http://rhiana.heath.cc">
+    <div class="container">
+      <div>
+        <h1>The Heath's Home Website</h1>
+      <div>
+		  <div id="left" class="grid_1">
+        <h2>Rhiana's Website</h2>
+        <a href="http://rhiana.heath.cc">
   			<img src="http://rhiana.heath.cc/img/rhiana1.JPG" alt="Rhiana"></img>
-      </a>
-		</div>
+        </a>
+		  </div> 
 
-		<div id="right">
-      <a href="http://daniel.heath.cc">
-        <img src="http://daniel.heath.cc/profile-pic.png" alt="Daniel"></img>
-      </a>
-		</div>
+		  <div id="right" class="grid_2">
+        <h2>Daniel's Website</h2>
+        <a href="http://daniel.heath.cc">
+          <img src="http://daniel.heath.cc/profile-pic.png" alt="Daniel"></img>
+        </a>
+		  </div>
 
+  </div>
 	</body>
 
 </html>
